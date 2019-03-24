@@ -17,5 +17,5 @@ model.fit(xs, ys, {epochs: 500}).then(() => {
 // Register click event handler for predict button
 document.getElementById('predictButton').addEventListener('click', (el, ev) => {
     let val = document.getElementById('inputValue').value;
-    document.getElementById('output').innerText = model.predict(tf.tensor2d([val], [1,1]));
+    document.getElementById('output').innerText = model.predict(tf.tensor2d([Number(val)], [1,1]));
 });

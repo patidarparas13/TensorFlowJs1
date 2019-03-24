@@ -55912,7 +55912,7 @@ model.fit(xs, ys, {
 
 document.getElementById('predictButton').addEventListener('click', function (el, ev) {
   var val = document.getElementById('inputValue').value;
-  document.getElementById('output').innerText = model.predict(tf.tensor2d([val], [1, 1]));
+  document.getElementById('output').innerText = model.predict(tf.tensor2d([Number(val)], [1, 1]));
 });
 },{"@tensorflow/tfjs":"node_modules/@tensorflow/tfjs/dist/tf.esm.js","bootstrap/dist/css/bootstrap.css":"node_modules/bootstrap/dist/css/bootstrap.css"}],"C:/Users/PP/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
